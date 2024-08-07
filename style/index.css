@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 .inter {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;                                             
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -26,8 +26,16 @@ header{
     margin: 0px;
     padding: 0px;
     width: auto;
+    font-family: Inter;
 }
 /* nav-bar */
+.menu-list{
+    border-color: #323232;
+    border-style: solid;
+    border-width: .5px;
+    padding: 3px 25px 3px 3px;
+    border-radius: 46px;
+}
 .header-menu-container{
     padding: 57px 190px;
     display: flex;
@@ -62,7 +70,7 @@ header{
     font-size: 18px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 576px){
     .header-menu-container{
         padding: 52px 20px;
     }
@@ -75,7 +83,7 @@ header{
     }
     .bar{
         display: block;
-        background: #35276d;
+        background: #ffffff;
         height: 2px;
         margin-bottom: 2px;
         border-radius: 50px;
@@ -96,11 +104,15 @@ header{
     justify-content: center;
 }
 .hero-text-section h1{
-    font-size: 78px;
+    font-size: 75px;
+    line-height: 85px;
+    font-weight: 800;
 }
-/* .hero-text-section h1 span{
-
-} */
+.hero-text-section h1 span{
+    font-family: 'Miama', sans-serif;
+    font-weight: 100;
+    font-size: 140px;
+}
 .hero-text-section p{
     margin-top: 28px;
     font-size: 16px;
@@ -201,7 +213,7 @@ header{
     font-size: 13px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 576px){
     .hero-section{
         padding: 20px;
     }
@@ -216,9 +228,13 @@ header{
     }
     .hero-text-section h1{
         font-size: 36px;
+        line-height: 42px;
+    }
+    .hero-text-section h1 span{
+        font-size: 70px;
     }
     .hero-text-section p{
-        padding-right: 140px;
+        padding-right: 85px;
     }
     .button-section button span{
         display: none;
@@ -240,14 +256,27 @@ header{
     .video-section{
         margin-top: 170px;
         margin-right: 20px;
-        padding: 10px 23px;
+        padding: 0px 23px;
     }
     .video2-section{
-        margin-top: -70px;
+        margin-top: -50px;
         margin-left: 0px;
         margin-right: 0px;
-        padding: 12px 20px;
+        padding: 0px 20px;
     }
+    .video-text h3 {
+        font-size: 17px;
+    }
+    .video-text p {
+        font-size: 9px;
+    }
+    .video2-text h3 {
+        font-size: 26px;
+    }
+    .video2-text p {
+        font-size: 9px;
+    }
+
 }
 
 /* habit section */
@@ -256,15 +285,16 @@ header{
     margin: 100px 198px;
 }
 .habit-text-section{
-    margin: 0px 186.5px;
+    margin: 0px 230px;
 }
 .habit-text-section h1{
+    font-weight: 800;
     font-size: 48px;
     text-align: center;
 }
 .habit-text-section p{
     padding: 14px;
-    font-size: 14px 14px 0px 14px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -286,11 +316,12 @@ header{
     margin-top: 58px;
 }
 .habit-type-contener p{
+    font-size: 14px;
     text-align: center;
     margin-top: 5px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 576px){
     .habit-section{
         margin: 0px 38px;
     }
@@ -321,6 +352,7 @@ header{
     margin: 54px 40px;
 }
 .promo-text-section h1{
+    font-weight: 800;
     font-size: 48px;
 }
 .promo-text-section p{
@@ -347,10 +379,10 @@ header{
     background-position-y: 32%;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 576px){
     .promo-sevtion{
         flex-direction: column;
-        margin: 20px;
+        margin: 50px 20px;
         padding: 0px 33px 21px 33px;
     }
     .promo-text-section{
@@ -390,7 +422,7 @@ header{
     margin: 100px 190px;
 }
 .text-section{
-    width: 45%;
+    width: 55%;
 }
 .text-section h1{
     font-size: 48px;
@@ -484,7 +516,7 @@ header{
     background-color: rgb(0, 71, 255, 30%);
     flex-direction: column-reverse;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 576px){
     .first-tab-image, .second-tab-image{
         height: 140px;
     }
@@ -519,15 +551,19 @@ header{
 .bmi-text-section{
     display: flex;
     flex-direction: column;
-    margin: 80px 300px 80px 300px;
+    margin: 80px 270px;
     align-items: center;
 }
 
 .bmi-text-section-contener h1{
     font-size: 48px;
+    margin-bottom: 14px;
+}
+.bmi-text-section-contener p{
+    font-size: 14px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 576px){
     .bmi-text-section{
         margin: 30px 0px 0px 0px;
     }
@@ -541,11 +577,47 @@ header{
 
 .bmi-section{
     display: flex;
-    margin: 0px 190px;
+    padding: 49px 190px;
     width: calc(100% - (190px + 190px));
+    background-color: #222222;
 }
 .bmi-chart{
     width: 50%;
+}
+
+table{
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid rgb(255, 255, 255, 10%);
+    padding: 13px 18px;
+    color: rgb(255, 255, 255, 50%);
+    font-size: 14px;
+    text-align: left;
+}
+.input-section1, .input-section2{
+    display: flex;
+}
+.input-section1 input, .input-section2 input{
+    padding: 13px 20px;
+    margin: 6px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255, 10%);
+    border-style: none;
+    color: rgb(255, 255, 255, 60%);
+} 
+.input-section1 input{
+    width: 50%;
+}
+
+.input-section2 input{
+    width: 100%;
+}
+.calculate-bmi h1{
+    margin-bottom: 14px;
+}
+.calculate-bmi p{
+    margin-bottom: 34px;
 }
 .calculate-bmi{
     width: 50%;
@@ -554,15 +626,40 @@ header{
     font-size: 28px;
     margin-bottom: 52px;
 }
-
-.bmi-chart-table table tbody tr th, td{
-    border-style: solid;
-    border-color: #222222;
-    border-width: 0.1px;
-    border-spacing: 0px;
+@media only screen and (max-width: 576px){
+    .bmi-section{
+        flex-direction: column;
+        margin-top: 30px;
+        padding: 20px 0px 43px 0px;
+        width: 100%;
+    }
+    .bmi-chart {
+        width: calc(100% - 20px);
+        margin: 20px;
+    }
+    .bmi-chart h3{
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+    .calculate-bmi {
+        width: calc(100% - 40px);
+        margin: 20px;
+    }
+    .calculate-bmi h1{
+        font-size: 16px;
+    }
+    .calculate-bmi p{
+        font-size: 14px;
+        padding-right: 50px;
+    }
+    .input-section1 input{
+        width: calc(50%);
+    }
+    
+    .input-section2 input{
+        width: calc(100%);
+    }
 }
-
-
 
 .team-section{
     margin: 88px 190px;
@@ -572,15 +669,17 @@ header{
 }
 .team-text-section h1{
     font-size: 48px;
+    font-weight: 800;
     text-align: center;
 }
 .team-text-section p{
     text-align: center;
+    font-size: 14px;
 }
 
-
 .tab-trainer-section{
-    width: 100%;
+    background-color: rgb(255, 255, 255, 10%);
+    border-radius: 18px;
 }
 
 .trainer-image-section{
@@ -629,15 +728,25 @@ header{
     margin: 10px;
     border-radius: 18px;
 }
+.trainer1 span h3, .trainer2 span h3, .trainer3 span h3, .trainer4 span h3, .trainer5 span h3, .trainer6 span h3{
+    font-size: 20px;
+}
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
     
     .team-section{
-        margin: 40px;
+        margin: 0px;
+    }
+    .tab-trainer-section{
+        padding: 10px 20px;
+        margin: 0px 20px;
+    }
+    .team-text-section{
+        margin: 40px 45px;
     }
     .team-text-section h1{
         font-size: 32px;
+        margin: 14px 0px;
     }
     .trainer1, .trainer4{
         display: none;
@@ -657,4 +766,165 @@ header{
         padding-top: 210px;
     }
 
+}
+footer{
+    background-color: rgb(255, 255, 255, 10%);
+}
+.main-footer{
+    display: flex;
+    padding: 66px 190px;
+    width: calc(100% - (190px + 190px));
+}
+.logo-discription-section{
+    width: 50%;
+    padding-right: 300px;
+    margin-top: 20px;
+}
+.logo-section-footer h1{
+    font-size: 70px;
+}
+.logo-discription-section p{
+    font-size: 14px;
+}
+.menu1-section, .menu2-section{
+    width: 25%;
+}
+.menu2-section{
+    display: flex;
+    justify-content: end;
+}
+.menu1-section h3, .menu2-section h3{
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+.menu1-section ul li, .menu2-section ul li{
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+.menu1-section ul, .menu2-section ul{
+    list-style: none;
+}
+
+@media only screen and (max-width: 576px){
+    .main-footer{
+        flex-direction: column;
+        padding: 0px;
+        margin: 20px ;
+        width: 80%;
+    }
+    .logo-section-footer{
+        margin-top: 90px;
+    }
+    .logo-section-footer h1{
+        font-size: 70px;
+    }
+    .logo-discription-section{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .logo-discription-section p{
+        margin: 20px 0px 40px;
+    }
+    .menu1-section, .menu2-section{
+        width: 100%;
+    }
+    .menu2-section{
+        display: inline;
+    }
+    .menu1-section h3, .menu2-section h3{
+        margin-bottom: 40px;
+    }
+    .menu1-section ul li, .menu2-section ul li{
+        margin-bottom: 20px;
+    }
+    .menu1-section ul, .menu2-section ul{
+        list-style: none;
+    }
+    
+}
+
+.property-section{
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    border-color: #323232;
+    margin: 0px 190px;
+}
+.property-text-section{
+    padding: 35px 0px;
+    text-align: center;
+}
+@media only screen and (max-width: 576px){
+    .property-section{
+        border-style: solid;
+        border-width: 2px 0px 0px 0px;
+        border-color: #323232;
+        margin: 0px 20px;
+    }
+    .property-text-section{
+        padding: 35px 0px;
+        text-align: center;
+    }
+}
+
+.member-section{
+    display: flex;
+    margin: 0px 190px;
+}
+.member-text-section{
+    width: 50%;
+}
+.member-image-section{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.member-text-section p{
+    margin: 10px 0px;
+}
+.member-text-section h1{
+    font-size: 70px;
+}
+.review-section{
+    display: flex;
+    margin: 30px 190px 120px;
+}
+.review{
+    margin: 20px;
+    padding: 80px 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-radius: 18px;
+}
+.review:hover{
+    border-color: #E6533C;
+}
+.review i{
+    margin: 10px;
+}
+.review p{
+    margin: 10px;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 576px){
+    .member-section{
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+    }
+    .member-text-section{
+        width: 100%;
+    }
+    .member-text-section h1{
+        font-size: 36px;
+    }
+    .member-image-section{
+        display: none;
+    }
+    .review-section{
+        flex-direction: column;
+        margin: 30px 20px 120px;
+    }
 }
