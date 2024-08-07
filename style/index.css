@@ -89,6 +89,11 @@ header{
         border-radius: 50px;
     }
 }
+@media only screen and (min-width: 576px ) and (max-width: 992px){
+    .header-menu-container{
+        padding: 57px 30px;
+    }
+}
 /* hero section */
 .hero-section{
     padding: 0px 190px;
@@ -278,6 +283,22 @@ header{
     }
 
 }
+@media only screen and (min-width: 576px ) and (max-width: 992px){
+    .hero-section{
+        padding: 0px 30px;
+    } 
+    .hero-section-container{
+        flex-direction: column;
+    }
+    .hero-text-section{
+        width:100%;
+    }
+    .hero-image-section{
+        width: 100%;
+        justify-content: center;
+        background-position: center;
+    }
+}
 
 /* habit section */
 .habit-section{
@@ -285,7 +306,7 @@ header{
     margin: 100px 198px;
 }
 .habit-text-section{
-    margin: 0px 230px;
+    margin: 0px 190px;
 }
 .habit-text-section h1{
     font-weight: 800;
@@ -293,7 +314,6 @@ header{
     text-align: center;
 }
 .habit-text-section p{
-    padding: 14px;
     font-size: 14px;
     text-align: center;
 }
@@ -336,8 +356,19 @@ header{
     }
     .habit-type-contener{
         padding: 0px 53.5px;
+    }    
+}
+@media only screen and (min-width: 576px ) and (max-width: 992px){
+    .habit-section{
+        margin: 110px 30px;
     }
-    
+    .habit-text-section{
+        margin: 0px 30px;
+    }
+    .habit-type-section{
+        flex-wrap: wrap
+    }
+
 }
 
 .promo-sevtion{
@@ -415,6 +446,14 @@ header{
     .promo-text-section button{
         padding: 16px 101px;
         margin-top: 34px;
+    }
+}
+@media only screen and (min-width: 576px ) and (max-width: 992px){
+    .promo-sevtion{
+        margin: 0px 30px;
+    }
+    .promo-image{
+        margin-left: 0px;
     }
 }
 
@@ -547,6 +586,11 @@ header{
         width: 55%;
     }
 }
+@media only screen and (min-width: 576px ) and (max-width: 992px){
+    .training-section{
+        margin: 0px;
+    }
+}
 
 .bmi-text-section{
     display: flex;
@@ -572,6 +616,14 @@ header{
     }
     .bmi-text-section-contener h1{
         font-size: 32px;
+    }
+}
+@media only screen and (min-width: 576px ) and (max-width: 992px){
+    .training-section{
+        margin: 30px;
+    }
+    .bmi-text-section{
+        margin: 70px 0px;
     }
 }
 
@@ -660,6 +712,19 @@ th, td {
         width: calc(100%);
     }
 }
+@media only screen and (min-width: 576px ) and (max-width: 992px){
+    .bmi-section{
+        flex-direction: column;
+        padding: 49px 30px;
+        width: calc(100% - (30px + 30px));
+    }
+    .calculate-bmi{
+        width: 100%;
+    }
+    .calculate-bmi h1{
+        margin-top: 50px;
+    }
+}
 
 .team-section{
     margin: 88px 190px;
@@ -680,6 +745,7 @@ th, td {
 .tab-trainer-section{
     background-color: rgb(255, 255, 255, 10%);
     border-radius: 18px;
+    padding: 10px;
 }
 
 .trainer-image-section{
@@ -767,6 +833,14 @@ th, td {
     }
 
 }
+@media only screen and (min-width: 576px ) and (max-width: 992px){
+    .team-section{
+        margin: 88px 30px;
+    }
+    .team-text-section{
+        padding: 45px 0px 30px 0px;
+    }
+}
 footer{
     background-color: rgb(255, 255, 255, 10%);
 }
@@ -779,6 +853,9 @@ footer{
     width: 50%;
     padding-right: 300px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .logo-section-footer h1{
     font-size: 70px;
@@ -842,6 +919,20 @@ footer{
     }
     
 }
+@media only screen and (min-width: 576px ) and (max-width: 992px){
+    .main-footer{
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    .logo-discription-section{
+        width: 100%;
+    }
+    .menu1-section, .menu2-section{
+        width: 50%;
+    }
+
+
+}
 
 .property-section{
     border-style: solid;
@@ -865,6 +956,11 @@ footer{
         text-align: center;
     }
 }
+@media only screen and (min-width: 576px ) and (max-width: 992px){
+    .property-section{
+        margin: 0px 30px;
+    }
+}
 
 .member-section{
     display: flex;
@@ -883,7 +979,7 @@ footer{
     margin: 10px 0px;
 }
 .member-text-section h1{
-    font-size: 70px;
+    font-size: 50px;
 }
 .review-section{
     display: flex;
@@ -896,6 +992,7 @@ footer{
     border-width: 1px;
     border-color: #ffffff;
     border-radius: 18px;
+    transition: 0.3s;
 }
 .review:hover{
     border-color: #E6533C;
@@ -926,5 +1023,26 @@ footer{
     .review-section{
         flex-direction: column;
         margin: 30px 20px 120px;
+    }
+}
+@media only screen and (min-width: 576px ) and (max-width: 992px){
+    .main-footer{
+        width: calc(100% - (30px + 30px));
+    }
+    .member-section{
+        margin: 0px 30px;
+    }
+    .review-section{
+        margin: 30px;
+        flex-wrap: wrap;
+    }
+    .logo-discription-section{
+        padding-right: 300px;
+    }
+    .menu2-section{
+        justify-content: left;
+    }
+    .logo-discription-section p{
+        margin: 20px 0px 60px 0px;
     }
 }
