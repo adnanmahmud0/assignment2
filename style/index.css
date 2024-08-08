@@ -325,6 +325,10 @@ header{
 
 .habit-type-section img{
     border-radius: 180px;
+    padding: 3px;
+    background-color: rgb(255, 255, 255, 10%);
+}
+.habit-type-image{
     margin-bottom: 30px;
 }
 
@@ -454,6 +458,12 @@ header{
     }
     .promo-image{
         margin-left: 0px;
+    }
+    .promo-text-section p{
+        padding-right: 0px;
+    }
+    .promo-text-section h1{
+        font-size: 38px;
     }
 }
 
@@ -590,6 +600,9 @@ header{
     .training-section{
         margin: 0px;
     }
+    .text-section{
+        width: 90%;
+    }
 }
 
 .bmi-text-section{
@@ -658,6 +671,7 @@ th, td {
     border-style: none;
     color: rgb(255, 255, 255, 60%);
 } 
+
 .input-section1 input{
     width: 50%;
 }
@@ -1004,6 +1018,15 @@ footer{
     margin: 10px;
     font-style: italic;
 }
+.star{
+    margin-left: 10px;
+}
+.checked{
+    color: #E6533C;
+}
+.unchecked{
+    color: #ffffff;
+}
 
 @media only screen and (max-width: 576px){
     .member-section{
@@ -1037,7 +1060,7 @@ footer{
         flex-wrap: wrap;
     }
     .logo-discription-section{
-        padding-right: 300px;
+        padding-right: 200px;
     }
     .menu2-section{
         justify-content: left;
