@@ -28,6 +28,12 @@ header{
     width: auto;
     font-family: Inter;
 }
+p{
+    line-height: 23px;
+}
+button, ul{
+    cursor: pointer;
+}
 /* nav-bar */
 .menu-list{
     border-color: #323232;
@@ -110,7 +116,7 @@ header{
 }
 .hero-text-section h1{
     font-size: 75px;
-    line-height: 85px;
+    line-height: 82px;
     font-weight: 800;
 }
 .hero-text-section h1 span{
@@ -123,7 +129,7 @@ header{
     font-size: 16px;
 }
 .button-section{
-    margin: 20px 0px;
+    margin: 28px 0px;
 }
 
 .button1{
@@ -312,6 +318,7 @@ header{
     font-weight: 800;
     font-size: 48px;
     text-align: center;
+    margin-bottom: 14px;
 }
 .habit-text-section p{
     font-size: 14px;
@@ -448,7 +455,7 @@ header{
         background-position-y: 0%;
     }
     .promo-text-section button{
-        padding: 16px 101px;
+        padding: 16px 98px;
         margin-top: 34px;
     }
 }
@@ -663,20 +670,29 @@ th, td {
 .input-section1, .input-section2{
     display: flex;
 }
-.input-section1 input, .input-section2 input{
+.input-section1 input, .input-section2 input, select{
     padding: 13px 20px;
     margin: 6px;
     border-radius: 8px;
     background-color: rgb(255, 255, 255, 10%);
     border-style: none;
-    color: rgb(255, 255, 255, 60%);
-} 
-
-.input-section1 input{
-    width: 50%;
+    color: #B0B0B0
+}
+.option{
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #B0B0B0
 }
 
-.input-section2 input{
+.input-section1 input, select{
+    width: 50%;
+    flex: 1;
+}
+
+.input-section2 select{
     width: 100%;
 }
 .calculate-bmi h1{
@@ -1010,6 +1026,7 @@ footer{
 }
 .review:hover{
     border-color: #E6533C;
+    cursor: pointer;
 }
 .review i{
     margin: 10px;
