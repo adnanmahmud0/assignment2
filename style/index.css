@@ -182,7 +182,7 @@ button, ul{
 .video-section{
     margin-top: 300px;
     margin-right: 80px;
-    padding: 10px 23px;
+    padding: 15px 25px;
     display: flex;
     height: 60px;
     border-radius: 16px;
@@ -207,7 +207,7 @@ button, ul{
     margin-top: 40px;
     margin-left: 65px;
     margin-right: -50px;
-    padding: 12px 30px;
+    padding: 20px 30px;
     height: 60px;
     border-radius: 16px;
     background-color: rgb(255, 255, 255, 10%);
@@ -267,13 +267,13 @@ button, ul{
     .video-section{
         margin-top: 170px;
         margin-right: 20px;
-        padding: 0px 23px;
+        padding: 5px 25px;
     }
     .video2-section{
         margin-top: -50px;
         margin-left: 0px;
         margin-right: 0px;
-        padding: 0px 20px;
+        padding: 5px 25px;
     }
     .video-text h3 {
         font-size: 17px;
@@ -1016,6 +1016,7 @@ footer{
     margin: 30px 190px 120px;
 }
 .review{
+    width: calc(100% / 3);
     margin: 20px;
     padding: 80px 30px;
     border-style: solid;
@@ -1064,6 +1065,9 @@ footer{
         flex-direction: column;
         margin: 30px 20px 120px;
     }
+    .review{
+        width: auto;
+    }
 }
 @media only screen and (min-width: 576px ) and (max-width: 992px){
     .main-footer{
@@ -1075,6 +1079,9 @@ footer{
     .review-section{
         margin: 30px;
         flex-wrap: wrap;
+    }
+    .review{
+        width: 100%;
     }
     .logo-discription-section{
         padding-right: 200px;
